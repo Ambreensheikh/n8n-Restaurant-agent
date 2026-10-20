@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-bg: #10020F;
+  --color-brand-surface: #1A0419;
+  --color-brand-card: #260624;
+  --color-brand-card-hover: #330831;
+  --color-brand-border: #4E0D49;
+  --color-brand-border-light: #73156C;
+  --color-brand-primary: #E0218A;
+  --color-brand-primary-hover: #F72585;
+  --color-brand-accent: #C724B1;
+  --color-brand-text: #FCE7F3;
+  --color-brand-muted: #D8B4D6;
+  --color-brand-dark-muted: #8B5888;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #10020F;
+  color: #FCE7F3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Dark Magenta Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #140313;
+}
+::-webkit-scrollbar-thumb {
+  background: #4E0D49;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E0218A;
 }
